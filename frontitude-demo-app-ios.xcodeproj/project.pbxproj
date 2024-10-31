@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D43C2DBF2CD3E4460066E707 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D43C2DBD2CD3E4460066E707 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D43C2D9D2CD3E1570066E707 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,9 @@
 		D43C2D8C2CD3E1290066E707 /* frontitude-demo-app-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "frontitude-demo-app-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D43C2D9C2CD3E1570066E707 /* frontitude-demo-app-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "frontitude-demo-app-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D43C2DA62CD3E1570066E707 /* frontitude-demo-app-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "frontitude-demo-app-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D43C2DBE2CD3E4460066E707 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D43C2DC32CD3E8E30066E707 /* de-DE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "de-DE"; path = "de-DE.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D43C2DC42CD3E9020066E707 /* fr-FR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-FR"; path = "fr-FR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +82,7 @@
 		D43C2D832CD3E1290066E707 = {
 			isa = PBXGroup;
 			children = (
+				D43C2DBD2CD3E4460066E707 /* Localizable.strings */,
 				D43C2D8E2CD3E1290066E707 /* frontitude-demo-app-ios */,
 				D43C2D9F2CD3E1570066E707 /* frontitude-demo-app-iosTests */,
 				D43C2DA92CD3E1570066E707 /* frontitude-demo-app-iosUITests */,
@@ -192,6 +200,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"de-DE",
+				"fr-FR",
 			);
 			mainGroup = D43C2D832CD3E1290066E707;
 			minimizedProjectReferenceProxies = 1;
@@ -212,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D43C2DBF2CD3E4460066E707 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,12 +279,26 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		D43C2DBD2CD3E4460066E707 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D43C2DBE2CD3E4460066E707 /* en */,
+				D43C2DC32CD3E8E30066E707 /* de-DE */,
+				D43C2DC42CD3E9020066E707 /* fr-FR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		D43C2DAE2CD3E1570066E707 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -328,6 +353,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -337,6 +363,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -384,6 +411,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
